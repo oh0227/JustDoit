@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 문서</title>
+        <style>
+            .fix{
+                width: 200px; height: 200px;
+                background: tomato;
+                position: fixed; /*position: fixed는 지정한 
+                값만큼 브라우저를 기준으로 떨어뜨리고
+                스크롤을 하더라도 같은 위치에 있도록 고정시킨다.*/
+                top: 50px; left: 50px;
+            }
+            .sti{
+                width: 200px; height: 200px;
+                background: peru;
+                position: sticky; /*position: sticky는 평소에는
+                아무것도 설정하지 않은 듯 있다가 스크롤을 할때
+                지정된 위치값에 도달하면 그때부터 그 자리에 탁 붙어있음*/
+                top: 10px; bottom: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+        </div>
+        <div class="fix"></div>
+        <div class="sti"></div>
+        <div>
+            두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+        </div>
+
+    </body>
+</html>

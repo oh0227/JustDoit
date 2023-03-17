@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 문서</title>
+        <style>
+            div{
+                width: 200px; height: 200px;
+                background-color: yellow;
+
+                position: relative;
+                border: 1px solid black;
+                top: 100px; left: 100px;
+                /* position: relative는 div의 위치를 원래 위치에서 얼마나 
+                상하좌우로 움직일지 지정해 주는 속성 
+                다른 태그를 추가하면 
+                마치 원래 위치에 있는 것으로 판정됨*/
+            }
+            .abs{
+                width: 100px; height: 100px;
+                background-color: red;
+                position: absolute; /*position: absolute는 
+                지정한 태그의 가장 가까운 상위 태그의 위치요소를 기준으로 위치를 정함.
+                또한, absolute로 지정한 태그는 문서의 흐름에서 제외됨.
+                만약, 상위 태그 중에 position 요소가 지정되어 있지 않다면
+                브라우저 화면 기준으로 위치를 잡는다.*/
+                top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div>
+            <div class="abs"></div>
+            <p>pppppp</p>
+        </div>
+    </body>
+</html>

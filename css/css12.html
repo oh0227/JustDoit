@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 문서</title>
+        <style>
+            .container{
+                display: flex; /* display: flex는 container의 진행방향으로
+                container 안의 요소들을 정렬시킨다.(행 방향으로 정렬) */
+                flex-direction: column-reverse;
+                /* flex-direction 요소는 행을 기준으로 정렬 할지
+                열을 기준으로 정렬할지 정할 수 있는 요소이다.
+                row, row-reverse, column, column-reverse로 정할 수 있음.*/
+            }
+            .item{
+                width: 80px; height: 80px;
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 문서</title>
+        <style>
+            #a{ width: 100px; height: 50px;
+            background-color:orange;
+            float: right;}
+            #b{ width: 100px; height: 100px;
+            background-color:royalblue;
+            float: left;} /* float 요소는 문서의 흐름에서 벗어나게 해준다.*/
+            p{
+                clear: both; /* clear는 float 요소 이후에 표시되는 
+                요소거 float 요소의 아래로 내려가게 해줌. */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="a"></div>
+        <div id="b"></div>
+        <p>안녕하세요 저는 세 번째 태그에요</p>
+        <p>안녕하세요 저는 네 번째 태그에요</p>
+        <p>안녕하세요 저는 다섯 번째 태그에요</p>
+        <p>안녕하세요 저는 여섯 번째 태그에요</p>
+    </body>
+</html>
