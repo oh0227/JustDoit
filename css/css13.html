@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 문서</title>
+        <style>
+            .container{
+                display: flex;
+                width: 300px; height: 300px;
+                border: 2px solid black;
+                justify-content: space-between;/* justify-content는 
+                container안의 태그들을 주축을 기준으로 어떻게 배치할지
+                정하는 요소이다 
+                flex-start(왼쪽 정렬), center(가운데 정렬), flex-end(오른쪽 정렬)
+                space-around(양옆의 여백이 일정하게 정렬)
+                space-between(첫번째와 마지막을 양 끄테 붙히고 나머지의 간격 일정하게 정렬)*/
+                align-items: center;
+                /* align-items는 
+                container안의 태그들을 교차축을 기준으로 
+                어떻게 배치할지 정하는 요소이다 */
+                flex-wrap: wrap-reverse;/*flex-wrap은 container의 크기보다
+                안에 들어있는 요소들의 크기가 더 커지면 크기를 줄일지
+                행을 늘릴지 정하는 요소이다.
+                nowrap(겹치면 크기를 줄임), wrap(겹치면 행 추가),
+                wrap-reverse(겹치면 행을 추가 하는데 상하 반전됨)*/
+            }
+            .item{
+                width: 120px; height: 60px;
+                background-color: teal;
+            }
+            .self{
+                align-self: flex-start; /*align-self는 개별 요소에
+                하나하나 지정해주는 요소이다.*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item self">2</div>
+            <div class="item">3</div>
+        </div>
+    </body>
+</html>
