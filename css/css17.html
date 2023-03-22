@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 문서</title>
+        <style>
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 300px; height: 300px;
+
+                color: tomato;
+                font-size: 24px;
+                border: 3px dashed red;
+            } /* div 태그에 지정해 준 값들 중 일부는 div의 자식 태그한테
+            상속된다. ex) border는 상속 안됨*/
+
+            p{
+                color: unset;
+                font-size: initial;
+                border: inherit;
+            }/* 선택자로 따로 지정해주면 상속은 무의미 해진다.
+            border 같은 경우는 상속이 안되기 때문에 꼭 따로 지정해줘야 한다.
+            inherit을 사용하면 상속이 안되는 놈도 상속을 받도록 지정할 수 있음.
+            initial은 기본값을 사용하겠다고 선언하는 명령어 
+            unset은 상속되는 놈은 상속을 받고 상속 안받는 놈은 안받게 설정해주는 명령어*/
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>가운데 p 태그</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 문서</title>
+        <style>
+            /*
+            first-line marker placeholder before after
+            */
+            p::first-line{
+                color: red;
+            }
+            p::first-letter{
+                color:yellow;
+            }
+            li::marker{
+                color:aqua;
+            }
+            input::placeholder{
+                font-size: 24px;
+                color: black;
+            }
+            #unique::before{
+                content:"앞에다 추가한 텍스트 요소 ";
+                color: purple; font-weight: 900;
+            }
+            #unique::after{
+                content:" 뒤에다 추가한 텍스트 요소 ";
+                color: forestgreen; font-weight: 900;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+        </p>
+        <ul>
+            <li>강아지</li>
+            <li>고양이</li>
+            <li>다람쥐</li>
+            <li>햄스터</li>
+        </ul>
+        <input type="text" placeholder="아무거나 쓰세요!">
+
+        <p id="unique">원래 쓰여 있던 내용</p>
+    </body>
+</html>

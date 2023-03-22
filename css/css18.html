@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 문서</title>
+        <style>
+            div{width: 100px; height: 100px; position: relative;}
+            div:nth-child(1){ background-color: yellow; }
+            div:nth-child(2){ background-color: cyan; bottom: 50px;}
+            div:nth-child(3){ background-color: ivory; bottom: 100px;}
+            div:nth-child(4){ 
+                background-color: mediumslateblue; bottom: 150px
+            }
+            .first{ z-index: 4; }
+            .second{ z-index: 3; }
+            .third{ z-index: 2; }
+            .fourth{ z-index: 1; }/* 
+            - z-index는 요소들이 겹칠 때 기본값은 자연스럽게 
+            나중에 생긴 요소가 위로 덮히게 쌓이는데
+            이를 바꾸기 위해 사용함. 
+            - 만약, 두 요소의 z-index 값이 같게 설정되어 있으면 나중에 생선된
+            것이 덮도록됨. 
+            - position 요소가 정의되어 있는 요소들에 한해서만 z-index 값
+            지정가능*/
+        </style>
+    </head>
+    <body>
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="fourth">4</div>
+    </body>
+</html>
