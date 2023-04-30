@@ -1,6 +1,7 @@
 
 body{
-    background-color: cornsilk;
+    background-position: center;
+    background-image: contain;
 }
 
 .hidden {
